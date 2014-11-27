@@ -1,0 +1,593 @@
+/*
+	****************************************
+	  CSS Style for Dany & Rindi's Wedding
+	****************************************
+	
+	Made with love by Dany Laksono
+	January 2014
+	
+*/
+
+
+/*-------------------------------------------
+				Imports
+  ------------------------------------------- */
+
+@import url('font-awesome.min.css');
+@import url(http://fonts.googleapis.com/css?family=Tangerine);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+
+
+/*-------------------------------------------
+				Body
+  ------------------------------------------- */
+html, body {
+	height: 100%;
+}
+
+.fill { 
+	min-height: 100%;
+	height: 100%;
+}
+
+body {
+    padding-top:50px;
+	background: #fff;
+    -webkit-box-sizing: padding-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: padding-box;    /* Firefox, other Gecko */
+    box-sizing: padding-box;         /* Opera/IE 8+ */
+}
+
+.no-resize{
+	resize: none !important;
+}
+
+.green-line{
+	background: #a4c956;
+	height: 20px;
+	border-top: 3px solid #b1d95c;
+	border-bottom: 3px solid #b1d95c;
+}
+
+
+/*-------------------------------------------
+				Navbar
+  ------------------------------------------- */
+  
+.navbar-nav.navbar-right:last-child {
+	margin-right: 30px;
+	padding-right: 30px;
+	font-family:ubuntu;
+	font-size:1.2em;
+}
+.navbar-header .navbar-brand {
+	font-family: Tangerine;
+	font-size:2.25em;
+}
+
+/*-------------------------------------------
+				Depan
+  ------------------------------------------- */
+
+#home {
+	background-color:#fff;
+	background:url(../img/wedding1.jpg) no-repeat fixed center center transparent;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	height:100%;
+	position:relative;
+	padding-top:50px;
+	display:block;
+}
+@media (max-width: 640px)  and (orientation: landscape){
+#home {
+	min-height:300px;
+}
+}
+
+#home .line{
+	position: relative;
+	margin: 13px auto 0;
+}
+
+#home .line:before{
+	content: "";
+	width: 340px;
+	height: 2px;
+	background: #272727;
+	position: absolute;
+	left: 130px;
+	top: 10px;
+}
+
+#home .line:after{
+	content: "";
+	width: 340px;
+	height: 2px;
+	background: #272727;
+	position: absolute;
+	right: 130px;
+	top: 10px;
+}
+
+#home  .container {
+	height:100%;
+	position:absolute; 
+	top:25%; 
+}
+@media (max-width: 640px) {
+#home .container {
+	top:15%;
+}
+}
+@media (max-width: 640px)  and (orientation: landscape){
+#home .container {
+	top:5%;
+	display:block;
+	position:absolute;
+}
+}
+
+#home  .well {
+	background-color: rgba(70, 70, 70, 0.7);
+	border-radius:75px;
+	margin-bottom:0;
+	-webkit-border-radius: 75px;
+    -moz-border-radius: 75px;
+	color: white !important;
+}
+@media (max-width: 640px) {
+#home .well {
+	display:block;
+	border-radius:40px;
+	margin-bottom:0;
+	-webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+}
+}
+
+#home  .well .row {
+	padding:0 0;
+	}
+
+#home  .well .and {
+	text-align:center; 
+}
+
+#home h1  {
+	font-family: 'Tangerine';
+	display:inline;
+	font-size: 3em;
+	text-align: center;
+	text-shadow: black 0.1em 0.1em 0.2em;
+}
+@media (max-width: 640px) {
+#home h1 {
+    font-size:2em;
+	text-align: center;
+	text-shadow: black 0.1em 0.1em 0.2em;
+  }
+}
+
+#home h2  {
+  font-family: 'Ubuntu';
+  font-size: 1em;
+  padding: -10 -10;
+  text-align: center;
+  margin-bottom: -20;
+  margin-top: -20;
+}
+@media (max-width: 640px) {
+#home h2 {
+    padding: 0;
+    margin: 5px;
+    width: auto;
+	font-size:0.9em;
+  }
+}
+
+#home h3 {
+  font-family:Roboto Condensed;
+  padding: 0;
+  font-size: 1.2em;
+  width: auto;
+  text-align: center;
+  }
+@media (max-width: 640px) {
+#home h3 {
+    padding: 0;
+    margin: 5px;
+    width: auto;
+	font-size:1em;
+  }
+}
+
+#home h4 {
+  font-size: 1.2em;
+}
+
+#home .decore-top {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom:10px;
+}
+@media (max-width: 640px) {
+#home  .decore-top  {
+    margin-bottom: 0;
+  }
+}
+#home .decore-bottom{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top:10px;
+}
+@media (max-width: 640px) {
+#home  .decore-bottom  {
+    margin-bottom: 0;
+  }
+}
+
+
+/*-------------------------------------------
+				Undangan
+  ------------------------------------------- */
+
+#undangan{
+	background-color: #fff;
+	background: url(../img/bg.png);
+	font-family: 'Roboto Condensed';
+	font-size: 1.2em;
+	line-height: 24px;
+	color: #ffffff;
+	/*font-weight: 300;*/
+	padding: 50px 0; 
+	position:relative;
+}
+
+#undangan:before {
+	content: "";
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	height: 26px;
+	background: url(../img/line.png);
+}
+
+#undangan:after{
+	content: "";
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	height: 26px;
+	background: url(../img/line.png);
+} 
+
+#undangan div.container{
+	text-align: center;
+	padding: 0 0;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#undangan h2{
+	font-family: 'Tangerine', cursive;
+	font-size: 2em;
+	color: white;
+	text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.5);
+	filter: dropshadow(color=rgba(255, 255, 255, 0.5), offx=1, offy=1);
+	text-align: center;
+	padding: 20px 0 0;
+	margin: 0;
+}
+
+#undangan .decor{
+	display: block;
+	max-width: 200px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:30px;
+}
+
+#undangan .hjstories{
+	width:100%;
+	height:500px;
+	display:block;
+	padding:20px;
+}
+@media (max-width: 640px) {
+#undangan .hjstories{
+	height:300px;
+	width:100%;
+  }
+}
+
+#undangan .carousel-inner,.carousel,.item,.backgr {
+  height:100%;
+  width:100%;
+}
+
+#undangan .backgr {
+	background-repeat:no-repeat;
+	background-position:center;
+	width:100%;
+}
+
+/*fade effect */
+.carousel.carousel-fade .item {
+  -webkit-transition: opacity 2s ease-in-out;
+  -moz-transition: opacity 2s ease-in-out;
+  -ms-transition: opacity 2s ease-in-out;
+  -o-transition: opacity 2s ease-in-out;
+  transition: opacity 2s ease-in-out;
+}
+.carousel.carousel-fade .active.left,
+.carousel.carousel-fade .active.right {
+  left: 0;
+  z-index: 2;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.carousel.carousel-fade .next,
+.carousel.carousel-fade .prev {
+  left: 0;
+  z-index: 1;
+}
+
+.carousel.carousel-fade .carousel-control {
+  z-index: 3;
+}
+.carousel.carousel-fade .item {
+  opacity:0;
+}
+.carousel.carousel-fade .active.item {
+    opacity:1;
+}
+/*fade effect */
+
+
+
+
+/*-------------------------------------------
+				Resepsi
+  ------------------------------------------- */
+  
+  
+#resepsi{
+	background-color:#333;
+	font-family:Roboto condensed;
+	text-align: center;
+	font-size: 18px;
+	/*height:100%;
+	max-height:600px;*/
+	background:url(../img/bg5.jpg) repeat fixed center center transparent; 
+	background-size: 100% 100%;
+	padding: 40px 0;
+	position:relative;
+}
+
+
+#resepsi h1{
+	font-family: 'Tangerine', cursive;
+	font-weight: normal;
+	font-size: 3em;
+	color: #333;
+	padding-top:10px;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+	filter: dropshadow(color=rgba(0, 0, 0, 0.5), offx=1, offy=1);
+	text-align: center;
+	margin: 0;
+}
+
+
+#resepsi .line{
+	position: relative;
+	margin: 13px auto 0;
+}
+
+#resepsi .line:before{
+	content: "";
+	width: 320px;
+	height: 2px;
+	background: #272727;
+	position: absolute;
+	left: 130px;
+	top: 10px;
+}
+
+#resepsi .line:after{
+	content: "";
+	width: 320px;
+	height: 2px;
+	background: #272727;
+	position: absolute;
+	right: 130px;
+	top: 10px;
+}
+
+#resepsi  .countdon {
+	display: block;
+	max-width: 350px;
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:30px;
+	padding-bottom:50px;
+}
+@media (max-width: 480px) {
+#stage_jbeeb_3 {
+	margin-left:auto !important;
+	margin-right:auto !important;
+	font-size:0.8em !important;
+}
+}
+
+
+/*-------------------------------------------
+				Peta
+  ------------------------------------------- */
+  
+  
+#peta{
+	background: url(../img/bg.png);
+	padding: 50px 0;
+	font-size: 16px;
+	line-height: 24px;
+	color: #888;
+	position:relative;
+}
+
+#peta:before {
+	content: "";
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	height: 26px;
+	background: url(../img/line.png);
+}
+
+#peta:after{
+	content: "";
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	height: 26px;
+	background: url(../img/line.png);
+}
+
+#peta div.container{
+	text-align: center;
+	height:100%;
+	width:100%;
+	padding: 50 0;
+}
+
+#map {
+  display:block;
+  height:500px;
+  width: auto;
+  background: #6699cc;
+  background-color: rgb(229, 227, 223);
+  overflow: hidden;
+  }
+
+#peta .panel{
+	background-color: rgba(255, 255, 255, 0.5);
+	min-height:500px;
+	overflow: hidden;
+}
+@media (max-width: 640px) {
+#peta .panel{
+	height:300px;
+	width: auto;
+	}
+}
+
+#tombolPanel .btn {
+   padding:10px 0;
+}
+
+#info {
+	font-family: Ubuntu;
+	color:#707070;
+	word-wrap: break-word;
+}
+
+#peta .modal-dialog{
+    width: 520px;
+	height:auto;
+}
+#peta .modal-dialog .modal-content {
+	width: 520px;
+}
+
+
+
+
+
+  
+/*-------------------------------------------
+				Bukutamu 
+  ------------------------------------------- */				
+
+
+#bukutamu{
+	background-color:#fff;
+	background:url(../img/bg4.jpg)  repeat fixed center center transparent;
+	background-size: 100% 100%;
+	padding-top: 40px;
+	padding-bottom: 10px;
+}
+
+#bukutamu .container .jumbotron{
+	background-color: rgba(10, 10, 10, 0.3);
+	color: #202020;
+}
+
+#bukutamu .container .jumbotron h2 {
+	font-family: Tangerine;
+	text-align:center;
+	font-size:3em;
+	color: black;
+}
+
+#bukutamu .jumbotron h4  {
+	font-family: 'Roboto Condensed';
+	text-align:center;
+}
+
+#bukutamu .panel .panel-body{
+	max-height:200px;
+	overflow-y:scroll;
+	word-wrap: break-word;
+}
+#bukutamu .isiBuku h2 {
+  color: black;
+}
+@media (max-width: 250px) {
+#minions {
+    white-space: normal;
+    width: 100px;
+}
+}
+/*-------------------------------------------
+				Footer 
+  ------------------------------------------- */				
+
+ #footer {
+	background: url(../img/bg.png) repeat fixed center center;
+	color: #444;
+	position:relative;
+	width:auto;
+	height:2em;
+}
+@media (max-width: 640px) {
+#footer {
+    height: 1.5em;
+}
+}
+
+ #footer h6{
+	vertical-align: center;
+    display: block;
+	text-align:left;
+	padding-left:10px;
+	padding-top:7px;
+	height:auto;
+	margin-top:0;
+}
+@media (max-width: 640px) {
+#footer h6{
+    font-size: 0.8em;
+}
+}
+
+/* made with love by Dany Laksono - 2014 */
+
+
+
+
+

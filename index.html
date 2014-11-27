@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rindi & Dany - The Wedding</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dany Laksono and Rindi Kurnianti's Wedding Invitation">
+    <meta name="author" content="Dany Laksono">
+	<!-- for facebook -->
+	<meta property="og:title" content="Rindi & Dany - The Wedding"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="http://www.rindidanywedding.com/"/>
+    <meta property="og:image" content="http://www.rindidanywedding.com/img/img_src.png"/>
+	<link rel="image_src" href="img/img_src.png">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	
+	<!-- I really don't like putting this on top of page (-_-') -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+	
+	<!-- CSSes -->
+    <link href="css/style.css" rel="stylesheet">
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css " rel="stylesheet" />
+	
+	<!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="../assets/ico/favicon.png">
+	
+  </head>
+
+  <body onload='initmap()'>
+	<!-- navbar -->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#home"><sup>R</sup> &#9829; <sub>D</sub></a>
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+		</div>
+		<div class="navbar-collapse collapse ">
+			<ul class="nav navbar-nav navbar-right">
+				<li class="active"><a href="#home"><i class="fa fa-home"></i> </a></li>
+				<li><a href="#undangan">Undangan</a></li>
+				<li><a href="#resepsi">Resepsi</a></li>
+				<li><a href="#peta">Peta</a></li>
+				<li><a href="#bukutamu">Buku Tamu</a></li>
+			</ul>
+		</div>
+	</nav>
+	
+	<!-- Depan -->
+	
+	<section id="home">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 col-sm-offset-1">
+					<div class="well">
+						<img class="decore-top img-responsive" src="/img/decor-1.png" alt=""/>
+						<h3>Undangan Pernikahan</h3>
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="row">
+									<div class="col-sm-9 pull-left" style="text-align:left">
+										<h1> Rindi Kurnianti</h1> 
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-12 and">
+										<h1> & </h1>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-9 pull-right" style="text-align:right">
+										<h1>Dany Laksono</h1>
+									</div>
+								</div>
+							</div>
+						</div>
+						<h2> Makassar, 22 Maret 2014</h2>
+						<img class="decore-bottom img-responsive" src="/img/decor-3.png" alt=""/>
+					</div>
+				</div>
+			</div>		
+		</div>		
+	</section>
+	
+	<section id="undangan">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6" style="padding: 0 15px">
+					<p>
+					<!--i>Segala puji bagi Allah Ta'ala yang telah menjadikan segala makhluk-Nya berpasang-pasangan.</i>
+					<br--><br>
+					Dengan memohon limpahan Ridho dan Kasih Sayang Allah Subhanahu Wa Ta'ala, kami bermaksud mengundang 
+					Bapak/Ibu dalam acara pernikahan kami:
+					<div class="row">
+						<div class="col-md-5">
+						<hr>					
+						<h2>Rindi Kurnianti, ST</h2><br>
+						Putri dari Bapak Basri Bokko dan Ibu Dyah Purhayati, Makassar<br>
+						<hr>
+						</div>
+						<div class="col-md-2">
+						<br><br><br><i>dengan</i><br><br>
+						</div>
+						<div class="col-md-5">
+						<hr>
+						<h2 style="font-size:1.7em">Dany Puguh Laksono, ST</h2><br>
+						Putra dari Bapak Suwadi dan Ibu Nasiroh, Panceng, Gresik<br>
+						<hr>
+						</div>
+					</div>
+					<br>
+					Ungkapan terima kasih dan rasa syukur kami sampaikan atas kehadiran Bapak/Ibu/rekan sekalian 
+					atas kehadiran dan doa restu kepada kedua mempelai. 
+					<br><br>
+					Kami yang berbahagia,		
+					</p>
+					<div class="row">
+						<div class="col-md-6">
+						<b>Keluarga Bapak Basri Bokko</b>
+						</div>
+						<div class="col-md-6">
+						<b>Keluarga Bapak Suwadi</b>
+						</div>
+					</div>
+					<br>
+					<button class="btn btn-info btn-md" data-toggle="modal" data-target="#callUndangan">
+					  Undangan Kami
+					</button>
+					<!-- Modal -->
+					<div class="modal fade" id="callUndangan" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					  <div class="modal-dialog modal-lg">
+						<div class="modal-content">
+						  <!--div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title" id="undModalLabel">Undangan Kami</h4>
+						  </div-->
+						  <div class="modal-body">
+							<!-- Isi Modal -->
+							<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+							  <!-- Indicators -->
+							  <ol class="carousel-indicators">
+								<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+								<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+								<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+								<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+							  </ol>
+
+							  <!-- Wrapper for slides -->
+							  <div class="carousel-inner">
+								<div class="item active">
+								  <img class="img-responsive" src="img/und/undhard1.jpg">
+								</div>
+								<div class="item">
+								  <img class="img-responsive" src="img/und/undhard2.jpg">
+								</div>
+								<div class="item">
+								  <img class="img-responsive" src="img/und/undhard3.jpg">
+								</div>
+								<div class="item">
+								  <img class="img-responsive" src="img/und/undhard4.jpg">
+								</div>
+								
+							  </div>
+
+							  <!-- Controls -->
+							  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left"></span>
+							  </a>
+							  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right"></span>
+							  </a>
+							</div>
+							<!-- Isi Modal -->
+						  </div>
+						  <div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
+						  </div>
+						</div>
+					  </div>
+					</div>
+				</div>
+				<div class="col-md-1" style="padding: 0 20px">
+				</div>
+				<div class="col-md-5" style="padding: 0 20px">
+					<div class="hjstories" style="padding: 0 20px">
+					<!--Carousel - no control-->
+						<div id="slideshow" class="carousel slide carousel-fade" data-ride="carousel">
+							<!--js script for good -->
+							<script>
+							$('.carousel').carousel({
+								interval: 7000,
+								pause: "hover",
+								wrap: true
+							});
+							</script>
+							<!-- all images are courtesy of hj-story.com -->
+							<div class="carousel-inner">
+								<div class="item active">
+								  <div class="backgr" style="background-image:url('/img/slide/lovestory.png');"></div>
+								</div>
+								<div class="item">
+								  <div class="backgr" style="background-image:url('/img/slide/1.jpg');"></div>
+								</div>
+								<div class="item">
+								  <div class="backgr" style="background-image:url('/img/slide/2.jpg');"></div>
+								</div>
+								<div class="item">
+								  <div class="backgr" style="background-image:url('/img/slide/3.jpg');"></div>
+								</div>
+								<div class="item">
+								  <div class="backgr" style="background-image:url('/img/slide/4.jpg');"></div>
+								</div>
+								<div class="item">
+								  <div class="backgr" style="background-image:url('/img/slide/5.jpg');"></div>
+								</div>
+								<div class="item">
+								  <div class="backgr" style="background-image:url('/img/slide/6.jpg');"></div>
+								</div>
+								<div class="item">
+								  <div class="backgr" style="background-image:url('/img/slide/7.jpg');"></div>
+								</div>
+								<div class="item">
+								  <div class="backgr" style="background-image:url('/img/slide/8.jpg');"></div>
+								</div>
+								<div class="item">
+								  <div class="backgr" style="background-image:url('/img/slide/9.jpg');"></div>
+								</div>
+								<div class="item">
+								  <div class="backgr" style="background-image:url('/img/slide/10.jpg');"></div>
+								</div>
+								<div class="item">
+								  <div class="backgr" style="background-image:url('/img/slide/11.jpg');"></div>
+								</div>
+								<div class="item">
+								  <div class="backgr" style="background-image:url('/img/slide/12.jpg');"></div>
+								</div>
+								<div class="item">
+								  <div class="backgr" style="background-image:url('/img/slide/13.jpg');"></div>
+								</div>
+								<div class="item">
+								  <div class="backgr" style="background-image:url('/img/slide/14.jpg');"></div>
+								</div>
+								<div class="item">
+								  <div class="backgr" style="background-image:url('/img/slide/15.jpg');"></div>
+								</div>
+								<div class="item">
+								  <div class="backgr" style="background-image:url('/img/slide/16.jpg');"></div>
+								</div>
+								<div class="item">
+								  <div class="backgr" style="background-image:url('/img/slide/17.jpg');"></div>
+								</div>
+								<div class="item">
+								  <div class="backgr" style="background-image:url('/img/slide/18.jpg');"></div>
+								</div>
+								<div class="item">
+								  <div class="backgr" style="background-image:url('/img/slide/19.jpg');"></div>
+								</div>
+								<div class="item">
+								  <div class="backgr" style="background-image:url('/img/slide/20.jpg');"></div>
+								</div>
+								</div>
+							</div>
+							<a class="left carousel-control" href="#slideshow" data-slide="prev"></a>
+							<a class="right carousel-control" href="#slideshow" data-slide="next"></a>
+					</div>
+				</div>
+			</div>
+			</div> 
+		</div>
+		<img class="decor img-responsive" src="img/bottom.png">
+	</section>
+	
+	<section id="resepsi">
+		<div class="container">
+			<div class="row" style="margin: 0 -15px">
+				<div class="col-md-6">
+					<p>
+					<h1> Akad Nikah </h1>
+					<br>
+					Akad nikah insya Allah akan dilangsungkan pada:<br>
+					<br>
+					<i>
+					Sabtu, 22 Maret 2014<br>
+					Pukul 09.00 WITA<br>
+					</i>
+					<br>
+					Bertempat di Kediaman Mempelai Wanita,<br>
+					Perumahan Bumi Tamalanrea Permai (BTP) Blok J/167 B<br>
+					Tamalanrea, Makassar
+					</p>
+				</div>
+				<div class="col-md-6">
+					<p>
+						<h1> Walimatul 'Urs </h1>
+						<br>
+						Acara Walimatul 'Urs diselenggarakan pada:<br>
+						<br>
+						<i>
+						Sabtu, 22 Maret 2014<br>
+						Pukul 19.00 WITA - selesai <br>
+						</i>
+						<br>
+						Bertempat di Gedung Lestari 45,<br>
+						Jalan Urip Sumoharjo, Makassar<br>
+					</p>
+				</div>
+			</div>
+			<div class="row" style="margin: 0 -15px">
+				<div class="col-md-12">
+					<div class="countdon">
+						<script src="js/countdown.js"></script>
+						<h1> Hitung mundur: </br> </br> </h1>
+						<script>
+						function countdon(lbr,tgg) {
+							var hitungmundur = 	new Countdown({
+								year: 2014, 
+								month:3,
+								day:22,
+								hour: 9,
+								ampm: "am",
+								width:lbr, 
+								height:tgg,  
+								rangeHi:"month",
+								style:"flip"
+								});
+						}
+						var width = $(window).width();
+						if (width < 480) {
+						countdon(200,40);
+						}
+						else {
+						countdon(350,60);
+						}
+						
+						</script>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="peta">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="panel panel-primary" > 
+					<div class="panel-heading"><i class="fa fa-search"></i> &nbsp;Perbesar Peta</div>
+					<div id="tombolPanel" class="panel-body" style="min-height:200px">
+						
+						<button onclick="perbesar(rumah)"  type="button" class="btn btn-info btn-md btn-block">Lokasi Akad</button>
+						<button onclick="perbesar(lestari)" type="button" class="btn btn-info btn-md btn-block">Lokasi Resepsi</button>
+						<button onclick="locateMe()" type="button" class="btn btn-success btn-md btn-block">Lokasi Saya</button>
+						<button onclick="perbesar(titik)" type="button" class="btn btn-warning btn-md btn-block">Reset Tampilan</button>
+												
+					</div>
+					<div class="panel-heading"><i class="fa fa-info-circle"></i> &nbsp;Informasi</div>
+					<div class="panel-body">
+						<div id="info">
+							<h4> <i></br> Klik pada marker untuk memunculkan informasi </i> </h4> 
+						</div>
+					
+					
+					</div>
+					</div>
+				</div>
+				<div class="col-md-9">
+					<div id="map"></div>
+				</div>
+			</div>
+		</div>
+		<div id="modalTiket" class="modal fade bs-example-modal-sm autoModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<button type="button" class="close" aria-hidden="true" data-dismiss="modal">&times;</button>
+					<iframe width="520" height="658" frameborder="0" scrolling="no" src="http://www.utiket.com/api2/price-calender.asp?lng=indonesia&dep=&dest=&domestic=indonesia&cur=IDR&pid="></iframe>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="bukutamu">
+		<div class="container">
+			<div class="jumbotron">
+			  <!--h2>"Wahai sekalian pemuda, siapa diantara kalian yang telah mampu untuk menikah maka hendaknya ia menikah, karena menikah dapat lebih menundukkan pandangan (kalian), dan lebih menjaga kehormatan" (Muttafaqqun 'Alaihi)</h2></br-->
+			  <h4>Diriwayatkan dari Abu Hurairah radhiyallaahu 'anhu, bahwasanya Nabi shallallaahu 'alaihi wa sallam apabila mendoakan dua orang yang menikah, maka beliau shallallaahu 'alaihi wa sallam mengucapkan:</h4>
+			  <h2>"Baarokallaahu laka, wa baaroka 'alaika, wa jama'a bainakumaa fii khairin"</h2>
+			  <h4><i>"Semoga Allah memberikan berkah kepadamu dalam masa senang dan susahmu, serta mengumpulkan kalian berdua dalam kebaikan (H.R At-Tirmidzi (1091). Dinyatakan Shahih oleh Al-Albani dalam Shahiihul Jaami' (4729))"</i></h4></br>
+			  <h4>Besar harapan kami kiranya Bapak/Ibu berkenan menghadiri acara pernikahan kami. Mempelai berdua dan keluarga memohon doa restu kepada para undangan agar kami dapat membentuk keluarga yang sakinah, serta mampu mengarungi bahtera kehidupan di bawah naungan ridho-Nya. </h4></br></br>
+			  <h4> Kunjungi juga halaman Facebook kami: </br></br> <a id="minions" class="btn btn-primary btn-md" role="button" href="https://www.facebook.com/events/197597077118122/"><i class="fa fa-heart-o"></i>&nbsp;Dany & Rindi's Wedding&nbsp;<i class="fa fa-heart-o"></i></a></h4>
+			</div>
+		</div>
+	</section>
+	
+	<section id="footer">
+		<div class="foo">
+			<h6>Made with love by <a href="https://github.com/danylaksono/danylaksono.github.io">Dany Laksono</a> &copy; 2014</h6>
+		</div>
+	</section>
+	
+    <!-- javascriptnyo
+    ================================================== -->
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>     
+	<script src="js/jquery.scrollTo.min.js"></script>
+	
+	</body>
+</html>
