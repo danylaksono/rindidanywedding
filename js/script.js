@@ -52,11 +52,11 @@ var map;
 		
 		//This one is to fix some bug that make image unfit leaflet's pop-up.
 		var divNodeGdg = document.createElement('DIV');
-		divNodeGdg.innerHTML = '<b>Walimatul \'Urs</b><br>Gedung Lestari 45</br> <img src="/img/gdg.jpg"/>';
+		divNodeGdg.innerHTML = '<b>Walimatul \'Urs</b><br>Gedung Lestari 45</br> <img src="img/gdg.jpg"/>';
 		lestari.bindPopup(divNodeGdg);
 		
 		var divNodeBndr = document.createElement('DIV');
-		divNodeBndr.innerHTML = '<b>Bandara Sultan Hassanuddin</b> <img src="/img/bndr.jpg"/>';
+		divNodeBndr.innerHTML = '<b>Bandara Sultan Hassanuddin</b> <img src="img/bndr.jpg"/>';
 		bandara.bindPopup(divNodeBndr);
 		
 		titik = new L.featureGroup([lestari, rumah, bandara]).addTo(map);
