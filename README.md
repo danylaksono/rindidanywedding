@@ -1,4 +1,5 @@
-danylaksono.github.io
-=====================
+******************
+Rindi Dany Wedding
+******************
 
-Gitty Webby Mappy
+Our web wedding archive
